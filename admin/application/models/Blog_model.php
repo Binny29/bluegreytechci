@@ -5,7 +5,7 @@ class Blog_model extends CI_Model
 	
 	function getblog(){
 		$this->db->select('*');
-		$this->db->from('tblblog');
+		$this->db->from('tblblogs');
 		$this->db->where('is_deleted','0');
 		$r=$this->db->get();
 		$res = $r->result();
